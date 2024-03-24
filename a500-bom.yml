@@ -1,0 +1,891 @@
+# A500+ Rev 8A Bill of Material
+---
+project: "Amiga 500 Rev 8A"
+base: "https://shred.github.io/a500-bom/"
+version: "0.1"
+date: "2024-02-29"
+source:
+  repo: "GitHub"
+  url: "https://github.com/shred/a500-bom"
+license:
+  type: "GNU General Public License (GPLv3)"
+  url: "https://www.gnu.org/licenses/gpl-3.0.en.html#content"
+---
+
+Board:
+  - id: 312812-01
+    part: "PCB Assembly (PAL)"
+    quantity: 1
+    remark: "Rämixx 500 by SukkoPera"
+  - id: 312812-02
+    part: "PCB Assembly (NTSC)"
+    quantity: 1
+    remark: "Rämixx 500 by SukkoPera"
+
+"Custom Chips":
+  - id: 390544-01
+    part: "MOS 8375 Agnus 2MB (PAL)"
+    package: "PLCC84"
+    quantity: 1
+    components: ["U2"]
+    remark: "Do not use other types!"
+    rare: true
+  - id: 390544-02
+    part: "MOS 8375 Agnus 2MB (NTSC)"
+    package: "PLCC84"
+    quantity: 1
+    components: ["U2"]
+    remark: "Do not use other types!"
+    rare: true
+  - id: 252127-02
+    part: "MOS 8364R7 Paula"
+    package: "DIP48"
+    quantity: 1
+    components: ["U3"]
+    remark: ""
+    rare: true
+  - id: 390433-02
+    part: "MOS 8373R4 Denise"
+    package: "DIP48"
+    quantity: 1
+    components: ["U4"]
+    remark: ""
+    rare: true
+  - id: 318072-01
+    part: "MOS 5719R2 Gary"
+    package: "DIP48"
+    quantity: 1
+    components: ["U5"]
+    remark: ""
+    rare: true
+  - id: 318029-02
+    part: "MOS 8520R4 CIA"
+    package: "DIP40"
+    quantity: 2
+    components: ["U7", "U8"]
+    remark: ""
+    rare: true
+
+"Integrated Circuits":
+  - id: 390084-03
+    part: "MC68000 8MHz"
+    package: "DIP64"
+    quantity: 1
+    components: ["U1"]
+    remark: ""
+    rare: true
+  - id: 390979-01
+    part: "ROM 256Kx16 Kickstart 2.04"
+    package: "DIP40"
+    quantity: 1
+    components: ["U6"]
+    remark: "Replace with AM27C400, MX27C4100 or similar"
+  - id: 318073-01
+    part: "OKI MSM6242B RTC"
+    package: "DIP18"
+    quantity: 1
+    components: ["U9"]
+    remark: "Replacement: RTC72421A (do not populate Y9, TC9, C911)"
+    rare: true
+  - id: 901521-13
+    part: "74LS244, 8-Bit Tri-State Buffer"
+    package: "DIP20"
+    quantity: 2
+    components: ["U10", "U12"]
+    remark: ""
+    mouser: {"id": "595-SN74LS244N"}
+  - id: 901521-29
+    part: "74LS373, Octal D-Type Transparent Latches"
+    package: "DIP20"
+    quantity: 2
+    components: ["U11", "U13"]
+    remark: ""
+    mouser: {"id": "595-SN74LS373N"}
+  - id: 390086-01
+    part: "LF347, Quad Op Amp, JFET"
+    package: "DIP14"
+    quantity: 1
+    components: ["U14"]
+    remark: ""
+    mouser: {"id": "595-LF347N"}
+  - id: 901521-11
+    part: "74LS157, Quad 2-Input Multiplexer"
+    package: "DIP16"
+    quantity: 1
+    components: ["U15"]
+    remark: ""
+    mouser: {"id": "595-SN74LS157N"}
+  - id: 318099-04
+    part: "DRAM 44256 (256Kx4), 120ns or faster"
+    package: "DIP20"
+    quantity: 8
+    components: ["U16", "U17", "U18", "U19", "U20", "U21", "U22", "U23"]
+    remark: ""
+    rare: true
+  - id: 390090-01
+    part: "74F139, Dual 1-of-4 Decoder/Demultiplexer"
+    package: "DIP16"
+    quantity: 1
+    components: ["U32"]
+    remark: "Replacement: 74ACT139"
+    rare: true
+    mouser: {"id": "595-CD74ACT139E"}
+  - id: 318052-01
+    part: "74F258, Quad 2-Input Multiplexer with 3-State Outputs"
+    package: "DIP16"
+    quantity: 1
+    components: ["U33"]
+    remark: ""
+    mouser: {"id": "595-SN74F258N"}
+  - id: 390108-01
+    part: "74F373, Octal Transparent Latch"
+    package: "DIP20"
+    quantity: 1
+    components: ["U34"]
+    remark: ""
+    mouser: {"id": "595-SN74F373N"}
+  - id: 318050-01
+    part: "74F244, Octal Buffers/Line Drivers with 3-State Outputs"
+    package: "DIP20"
+    quantity: 1
+    components: ["U35"]
+    remark: ""
+    mouser: {"id": "595-SN74F244N"}
+  - id: 901521-37
+    part: "74LS05, Hex Inverters with Open-Collector Outputs"
+    package: "DIP14"
+    quantity: 1
+    components: ["U36"]
+    remark: ""
+    mouser: {"id": "595-SN74LS05N"}
+  - id: 901521-31
+    part: "74LS32, Quad 2-Input OR Gate"
+    package: "DIP14"
+    quantity: 1
+    components: ["U37"]
+    remark: ""
+    mouser: {"id": "595-SN74LS32N"}
+  - id: 901882-01
+    part: "MC1488, Quad Line Driver"
+    package: "DIP14"
+    quantity: 1
+    components: ["U38"]
+    remark: ""
+    rare: true
+    mouser: {"id": "595-MC1488N"}
+  - id: 901883-01
+    part: "MC1489, Quad Line Receiver"
+    package: "DIP14"
+    quantity: 1
+    components: ["U39"]
+    remark: ""
+    rare: true
+    mouser: {"id": "595-MC1489N"}
+  - id: 390227-06
+    part: "74HCT245, Octal Tri-State Bus Transceiver"
+    package: "DIP20"
+    quantity: 2
+    components: ["U40", "U41"]
+    remark: ""
+    mouser: {"id": "595-SN74HCT245N"}
+  - id: 901523-01
+    part: "NE555, Timer"
+    package: "DIP8"
+    quantity: 1
+    components: ["U42"]
+    remark: ""
+    mouser: {"id": "595-NE555P"}
+
+Transistors:
+  - id: 390254-01
+    part: "MPF102 - N-Channel JFET"
+    package: "TO-92"
+    quantity: 2
+    components: ["Q321", "Q331"]
+    remark: "or PN4302. Rämixx500 SMD alternative: see below"
+    mouser: {"id": "863-MPF102"}
+  - id: 902658-01
+    part: "2N3904 - NPN"
+    package: "TO-92"
+    quantity: 2
+    components: ["Q501", "Q711"]
+    remark: ""
+    mouser: {"id": "637-2N3904"}
+  - id: 902707-01
+    part: "2N3906 - PNP"
+    package: "TO-92"
+    quantity: 3
+    components: ["Q301", "Q502", "Q503"]
+    remark: ""
+    mouser: {"id": "637-2N3906"}
+
+Diodes:
+  - id: 900850-01
+    part: "1N4148"
+    package: "TH"
+    quantity: 3
+    components: ["D501", "D911", "D912"]
+    remark: "or 1N914"
+    mouser: {"id": "512-1N4148"}
+
+Capacitors:
+  - id: 390082-01
+    part: "10nF - MLC Z5U"
+    package: "Axial"
+    quantity: 19
+    components: ["C7", "C8", "C10", "C12", "C15", "C32", "C33", "C34", "C35", "C36", "C37", "C39", "C308", "C701", "C713", "C800", "C801", "C802", "C803"]
+    remark: ""
+    mouser: {"id": "80-C410C103M5R-TR"}
+  - id: 390082-02
+    part: "100nF - MLC Z5U"
+    package: "Axial"
+    quantity: 1
+    components: ["C711"]
+    remark: ""
+    mouser: {"id": "80-C412C104K5R-TR"}
+  - id: 390082-04
+    part: "330nF - MLC Z5U"
+    package: "Axial"
+    quantity: 26
+    components: ["C1", "C2", "C3", "C4", "C5", "C6", "C9", "C11", "C13", "C14", "C16", "C17", "C18", "C19", "C20", "C40", "C41", "C42", "C301", "C302", "C305", "C325", "C335", "C501", "C502", "C804"]
+    remark: ""
+    mouser: {"id": "80-C440C334K5R-TR"}
+  - id: 900462-21
+    part: "22pF - MLC NP0"
+    package: "Axial"
+    quantity: 2
+    components: ["C911", "E666"]
+    remark: ""
+    mouser: {"id": "594-A220J15C0GH5TAA"}
+  - id: 900462-29
+    part: "47pF - MLC NP0"
+    package: "Axial"
+    quantity: 10
+    components: ["E102", "E103", "E106", "E107", "E108", "E109", "E791", "E792", "E793", "E794"]
+    remark: ""
+    mouser: {"id": "594-A470J15C0GH5TAA"}
+  - id: 900463-16
+    part: "1000pF - MLC X7R"
+    package: "Axial"
+    quantity: 6
+    components: ["C411", "C412", "C413", "C421", "C422", "C423"]
+    remark: ""
+    mouser: {"id": "80-C420C102J1G-TR"}
+  - id: 900463-23
+    part: "3900pF - MLC X7R"
+    package: "Axial"
+    quantity: 2
+    components: ["C323", "C333"]
+    remark: ""
+    mouser: {"id": "80-C430C392GAG5TA"}
+  - id: 900463-26
+    part: "6800pF - MLC X7R"
+    package: "Axial"
+    quantity: 2
+    components: ["C322", "C332"]
+    remark: ""
+    mouser: {"id": "80-C430C682GAG5TA"}
+  - id: 900463-36
+    part: "47nF - MLC X7R"
+    package: "Axial"
+    quantity: 4
+    components: ["C311", "C312", "C313", "C314"]
+    remark: ""
+    mouser: {"id": "80-C420C473J5G5TA"}
+  - id: 900463-37
+    part: "0.1µF - MLC XR7"
+    package: "Axial"
+    quantity: 2
+    components: ["C321", "C331"]
+    remark: ""
+    mouser: {"id": "80-C430C104F3G5TA"}
+  - id: 900410-13
+    part: "4.7µF 16V - Aluminum Electrolytic"
+    package: "TH 5mm"
+    quantity: 1
+    components: ["C913"]
+    remark: ""
+    mouser: {"id": "667-EEU-EB1H4R7SB"}
+  - id: 390101-06
+    part: "10µF 35V - Aluminum Electrolytic"
+    package: "TH 5mm"
+    quantity: 2
+    components: ["C306", "C712"]
+    remark: ""
+    mouser: {"id": "667-EEU-EB1J100SB"}
+  - id: 390101-04
+    part: "22µF 35V - Aluminum Electrolytic"
+    package: "TH 5mm"
+    quantity: 4
+    components: ["C303", "C304", "C324", "C334"]
+    remark: ""
+    mouser: {"id": "667-EEU-FR1H220B"}
+  - id: 251894-50
+    part: "47µF 35V - Aluminum Electrolytic"
+    package: "TH 5mm"
+    quantity: 2
+    components: ["C821", "C822"]
+    remark: ""
+    mouser: {"id": "667-EEU-FR1E470B"}
+  - id: 390101-02
+    part: "100µF 16V - Aluminum Electrolytic"
+    package: "TH 5mm"
+    quantity: 6
+    components: ["C811", "C812", "C813", "C814", "C815", "C816"]
+    remark: ""
+    mouser: {"id": "667-EEU-FR1C101B"}
+  - id: 251894-18
+    part: "1000µF 10V - Aluminum Electrolytic"
+    package: "TH 5mm"
+    quantity: 3
+    components: ["C307", "C401", "C402"]
+    remark: "height < 24mm"
+    mouser: {"id": " 667-EEU-FR1C102LB"}
+  - id: 251029-06
+    part: "Varicap 6.8pF – 45pF"
+    package: "TH 5mm"
+    quantity: 1
+    components: ["TC9"]
+    remark: ""
+    rare: true
+
+Resistors:
+  - id: 901550-64
+    part: "10Ω - 1/4W 5%"
+    package: "TH"
+    quantity: 2
+    components: ["R301", "R302"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-10R"}
+  - id: 901550-90
+    part: "27Ω - 1/4W 5%"
+    package: "TH"
+    quantity: 2
+    components: ["R101", "R102"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-27R"}
+  - id: 901550-56
+    part: "47Ω - 1/4W 5%"
+    package: "TH"
+    quantity: 6
+    components: ["R103", "R104", "R105", "R106", "R107", "R113"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-47R"}
+  - id: 901550-94
+    part: "68Ω - 1/4W 5%"
+    package: "TH"
+    quantity: 7
+    components: ["E104", "E105", "FB101", "R109", "R111", "R112", "R114"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-68R"}
+  - id: 901550-49
+    part: "100Ω - 1/4W 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R507"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-100R"}
+  - id: 901550-89
+    part: "150Ω - 1/4W 5%"
+    package: "TH"
+    quantity: 2
+    components: ["FB102", "R409"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-150R"}
+  - id: 901550-108
+    part: "360Ω - 1/4W 5%"
+    package: "TH"
+    quantity: 2
+    components: ["R321", "R331"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-360R"}
+  - id: 901550-57
+    part: "390Ω - 1/4W 5%"
+    package: "TH"
+    quantity: 2
+    components: ["R325", "R335"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-390R"}
+  - id: 901550-58
+    part: "470Ω - 1/4W 5%"
+    package: "TH"
+    quantity: 2
+    components: ["R911", "R913"]
+    remark: "Skip R913 on Rämixx500"
+    mouser: {"id": "603-MF0207FTE52-470R"}
+  - id: 901550-01
+    part: "1kΩ - 1/4W 5%"
+    package: "TH"
+    quantity: 10
+    components: ["R191", "R192", "R303", "R304", "R305", "R324", "R334", "R713", "R915", "R916"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-1K"}
+  - id: 901550-23
+    part: "2.7kΩ - 1/4W 5%"
+    package: "TH"
+    quantity: 2
+    components: ["R307", "R502"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-2K7"}
+  - id: 901550-19
+    part: "4.7kΩ - 1/4W 5%"
+    package: "TH"
+    quantity: 7
+    components: ["R201", "R202", "R402", "R403", "R404", "R503", "R504"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-4K7"}
+  - id: 901550-20
+    part: "10kΩ - 1/4W 5%"
+    package: "TH"
+    quantity: 11
+    components: ["R306", "R308", "R322", "R323", "R332", "R333", "R339", "R501", "R502", "R506", "R914"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-10K"}
+  - id: 901550-22
+    part: "47kΩ - 1/4W 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R712"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-47K"}
+  - id: 901550-82
+    part: "470kΩ - 1/4W 5%"
+    package: "TH"
+    quantity: 2
+    components: ["R326", "R336"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-470K"}
+  - id: 901550-84
+    part: "1MΩ - 1/4W 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R711"]
+    remark: ""
+    mouser: {"id": "603-MF0207FTE52-1M"}
+  - id: 901600-55
+    part: "0.47Ω - 1/2W 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R405"]
+    remark: ""
+    mouser: {"id": "603-FMP100JR-52-0R47"}
+  - id: 901600-36
+    part: "10Ω - 1/2W 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R309"]
+    remark: ""
+    mouser: {"id": "603-FMP100JR-52-10R"}
+  - id: 901600-50
+    part: "4.7Ω - 1/2W 5%"
+    package: "TH"
+    quantity: 3
+    components: ["R401", "R406", "R408"]
+    remark: "or 5.1Ω"
+    mouser: {"id": "603-FMP100JR-52-4R7"}
+  - id: 901600-15
+    part: "47Ω - 1/2W 5%"
+    package: "TH"
+    quantity: 3
+    components: ["E501", "E502", "E503"]
+    remark: ""
+    mouser: {"id": "603-FMP100JR-52-47R"}
+  - id: 390227-08
+    part: "39Ω Isolated Resistor Network, 5 Elements"
+    package: "SIP10"
+    quantity: 1
+    components: ["RP103"]
+    remark: "or 22Ω"
+    mouser: {"id": "652-4610X-2LF-39"}
+  - id: 390227-06
+    part: "47Ω Isolated Resistor Network, 5 Elements"
+    package: "SIP10"
+    quantity: 2
+    components: ["RP402", "RP403"]
+    remark: ""
+    mouser: {"id": "652-4610X-2LF-47"}
+  - id: 390227-05
+    part: "68Ω Isolated Resistor Network, 5 Elements"
+    package: "SIP10"
+    quantity: 3
+    components: ["RP201", "RP202", "RP203"]
+    remark: ""
+    mouser: {"id": "652-4610X-2LF-68"}
+  - id: 902410-11
+    part: "470Ω Bussed Resistor Network, 9 Elements"
+    package: "SIP10"
+    quantity: 1
+    components: ["RP104"]
+    remark: ""
+    mouser: {"id": "858-L101S471LF"}
+  - id: 902410-08
+    part: "4.7kΩ Bussed Resistor Network, 9 Elements"
+    package: "SIP10"
+    quantity: 3
+    components: ["RP101", "RP102", "RP401"]
+    remark: ""
+    mouser: {"id": "858-L101S472LF"}
+  - id: 902410-07
+    part: "10kΩ Bussed Resistor Network, 9 Elements"
+    package: "SIP10"
+    quantity: 1
+    components: ["RP501"]
+    remark: ""
+    mouser: {"id": "858-L101S103LF"}
+
+Filters:
+  - id: 251842-02
+    part: "EMI Filter 100pF"
+    package: "TH-3"
+    quantity: 31
+    components: ["E511", "E512", "E513", "E514", "E515", "E516", "E517", "E518", "E519", "E521", "E522", "E523", "E524", "E611", "E612", "E613", "E614", "E615", "E616", "E617", "E618", "E619", "E620", "E621", "E622", "E623", "E624", "E625", "E626", "E631", "E632"]
+#    remark: "Replacement: SMD"
+#    mouser: {"id": "810-YFF21AC1H101MTYN"}
+  - id: 390275-02
+    part: "EMI Filter 150pF"
+    package: "TH-3"
+    quantity: 4
+    components: ["E402", "E434", "E532", "E534"]
+#    remark: "Replacement: SMD"
+#    mouser: {"id": "810-YFF21AC1H221MTYN"}
+  - id: 390297-01
+    part: "EMI Filter 270pF"
+    package: "TH-3"
+    quantity: 2
+    components: ["E305", "E306"]
+#    remark: "Replacement: SMD"
+#    mouser: {"id": "810-YFF21AC1H221MTYN"}
+  - id: 390297-04
+    part: "EMI Filter 470pF"
+    package: "TH-3"
+    quantity: 17
+    components: ["E415", "E416", "E417", "E425", "E426", "E427", "E441", "E442", "E443", "E444", "E520", "E531", "E533", "E535", "E536", "E537", "E538"]
+#    remark: "Replacement: SMD"
+#    mouser: {"id": "810-YFF21AC1H471MTYN"}
+  - id: 390275-01
+    part: "EMI Filter 6800pF"
+    package: "TH-3"
+    quantity: 10
+    components: ["E302", "E303", "E411", "E412", "E413", "E414", "E421", "E422", "E423", "E424"]
+#    remark: "Replacement: SMD"
+#    mouser: {"id": "810-YFF21AC1H472MTYN"}
+  - id: 390297-05
+    part: "EMI Filter 0.01µF"
+    package: "TH-3"
+    quantity: 14
+    components: ["E101", "E110", "E401", "E403", "E404", "E405", "E406", "E407", "E408", "E601", "E602", "E702", "E703", "E704"]
+#    remark: "Replacement: SMD"
+#    mouser: {"id": "810-YFF21AC1E103MTYN"}
+  - id: 251578-02
+    part: "Line Filter"
+    package: "TH"
+    quantity: 1
+    components: ["LF1"]
+    remark: "Rämixx500 replacement: see below"
+    rare: true
+  - id: 252173-01
+    part: "Ferrite Bead"
+    package: "TH"
+    quantity: 4
+    components: ["E431", "E432", "E433", "E435"]
+#    rare: true
+#    remark: ""
+#    mouser: {"id": "875-28L0138-80R-10"}
+  - id: 252133-01
+    part: "Ferrite Bead Long"
+    package: "Radial"
+    quantity: 1
+    components: ["FB802"]
+#    rare: true
+#    remark: ""
+#    mouser: {"id": "875-28L0138-80R-10"}
+
+Oscillators:
+  - id: 252344-01
+    part: "28.37516 MHz Oscillator, metal (PAL)"
+    package: "DIP14"
+    quantity: 1
+    components: ["X1"]
+    remark: ""
+    rare: true
+  - id: 325566-14
+    part: "28.63636 MHz Oscillator, metal (NTSC)"
+    package: "DIP14"
+    quantity: 1
+    components: ["X1"]
+    remark: ""
+    rare: true
+  - id: 900560-01
+    part: "32.768 kHz Crystal"
+    package: "TH"
+    quantity: 1
+    components: ["Y9"]
+    remark: ""
+    mouser: {"id": "815-AB26T-32.768KHZ"}
+
+Connectors:
+  - id: 390242-01
+    part: "D-Sub DB-9 Male"
+    package: "DB9P"
+    quantity: 2
+    components: ["CN1", "CN2"]
+    remark: "Mouse, Joystick"
+    mouser: {"id": "523-L717SDE09PA4CH3R"}
+  - id: 252122-04
+    part: "RCA Jack, Black"
+    package: ""
+    quantity: 1
+    components: ["CN3"]
+    remark: "Audio Right"
+    mouser: {"id": "502-PJRAN1X1U01AUX"}
+  - id: 252122-01
+    part: "RCA Jack, White"
+    package: ""
+    quantity: 1
+    components: ["CN4"]
+    remark: "Audio Left"
+    mouser: {"id": "502-PJRAN1X1U02AUX"}
+  - id: 390241-03
+    part: "D-Sub DB-23 Female"
+    package: "DB23S"
+    quantity: 1
+    components: ["CN5"]
+    remark: "External Floppy"
+    rare: yes
+  - id: 390242-05
+    part: "D-Sub DB-25 Male"
+    package: "DB25P"
+    quantity: 1
+    components: ["CN6"]
+    remark: "RS232 Serial"
+    mouser: {"id": "523-L717SDB25PA4CH3R"}
+  - id: 390241-05
+    part: "D-Sub DB-25 Female"
+    package: "DB25S"
+    quantity: 1
+    components: ["CN7"]
+    remark: "Parallel Printer"
+    mouser: {"id": "523-L77SDB25SA4CH3F"}
+  - id: 252167-01
+    part: "5 Pin Square DIN"
+    package: ""
+    quantity: 1
+    components: ["CN8"]
+    remark: "Power Dynamics DS-215"
+    rare: true
+  - id: 390242-03
+    part: "D-Sub DB-23 Male"
+    package: "DB23P"
+    quantity: 1
+    components: ["CN9"]
+    remark: "Video"
+    rare: yes
+  - id: 252122-03
+    part: "RCA Jack, Yellow"
+    package: ""
+    quantity: 1
+    components: ["CN10"]
+    remark: "Composite Video"
+    mouser: {"id": "502-PJRAN1X1U04AUX"}
+  - id: 903345-17
+    part: "34 Pin DIL Header"
+    package: "DIL34"
+    quantity: 1
+    components: ["CN11"]
+    remark: "Internal Floppy"
+    mouser: {"id": "649-67997-234HLF"}
+  - id: 325516-04
+    part: "4 Pin SIL Header"
+    package: "SIL4"
+    quantity: 1
+    components: ["CN12"]
+    remark: "Internal Floppy Power"
+    mouser: {"id": "571-1718254"}
+  - id: 903326-08
+    part: "8 Pin SIL Header"
+    package: "SIL8"
+    quantity: 1
+    components: ["CN13"]
+    remark: "Keyboard"
+    mouser: {"id": "649-68001-208HLF"}
+  - id: 390224-01
+    part: "56 Pin DIL Header, Right Angle"
+    package: "RA-56H"
+    quantity: 1
+    components: ["P9"]
+    remark: "Expansion"
+    mouser: {"id": "200-TSW12825LDRA"}
+
+Various:
+  - id: 380393-01
+    part: "Battery, NiCd 3.6V 60mAh"
+    package: ""
+    quantity: 1
+    components: ["BT9"]
+    remark: "Not recommended. Rämixx500: Replaced with button cell."
+  - id: 390229-03
+    part: "Video Hybrid"
+    quantity: 1
+    components: ["HY1"]
+    remark: ""
+    rare: true
+
+"Sockets":
+  - id: 904150-06
+    part: "Socket, DIP40"
+    package: "DIP40"
+    quantity: 2
+    components: ["U7", "U8"]
+    remark: "CIA"
+    mouser: {"id": "575-11044640"}
+  - id: 904150-09
+    part: "Socket, DIP42"
+    package: "DIP42"
+    quantity: 1
+    components: ["U6"]
+    remark: "ROM"
+    mouser: {"id": "437-1108764241001101"}
+  - id: 251313-01
+    part: "Socket, DIP48"
+    package: "DIP48"
+    quantity: 3
+    components: ["U3", "U4", "U5"]
+    remark: "Paula, Denise, Gary"
+    mouser: {"id": "575-11044648"}
+  - id: 904150-10
+    part: "Socket, DIP64"
+    package: "DIP64"
+    quantity: 1
+    components: ["U1"]
+    remark: "CPU"
+    mouser: {"id": "575-199964"}
+  - id: 390185-01
+    part: "Socket, PLCC84"
+    package: "PLCC84"
+    quantity: 1
+    components: ["U2"]
+    remark: "Agnus"
+    mouser: {"id": "575-948424"}
+
+"Optional Parts":
+  - part: "Socket, DIP8"
+    package: "DIP8"
+    quantity: 1
+    components: ["U42"]
+    mouser: {"id": "575-144308"}
+  - part: "Socket, DIP14"
+    package: "DIP14"
+    quantity: 5
+    components: ["U14", "U36", "U37", "U38", "U39"]
+    mouser: {"id": "575-11044314"}
+  - part: "Socket, DIP16"
+    package: "DIP16"
+    quantity: 3
+    components: ["U15", "U32", "U33"]
+    mouser: {"id": "575-11044316"}
+  - part: "Socket, DIP18"
+    package: "DIP18"
+    quantity: 1
+    components: ["U9"]
+    mouser: {"id": "575-11044318"}
+  - id: 390768-04
+    part: "Socket, DIP20"
+    package: "DIP20"
+    quantity: 16
+    components: ["U10", "U11", "U12", "U13", "U16", "U17", "U18", "U19", "U20", "U21", "U22", "U23", "U34", "U35", "U40", "U41"]
+    mouser: {"id": "575-11044320"}
+  - id: 902410-08
+    part: "4.7kΩ Bussed Resistor Network, 9 Elements"
+    package: "SIP10"
+    quantity: 7
+    components: ["RP105", "RP106", "RP107", "RP108", "RP109", "RP110", "RP111"]
+    remark: "Optional bus termination, not populated on original boards"
+    mouser: {"id": "858-L101S472LF"}
+  - part: "Varicap 47pF"
+    package: "TH 5mm"
+    quantity: 1
+    components: ["C403"]
+    remark: "Not populated on original boards"
+    rare: true
+
+"Rämixx500 Only":
+  - part: "DT1042"
+    package: "TSOT26"
+    quantity: 4
+    remark: "Mouse/Joystick ESD protectors"
+    components: ["U90", "U91", "U92", "U93"]
+    mouser: {"id": "621-DT1042-04TS-7"}
+  - part: "74HCT14, Hex Schmitt-Trigger Inverters"
+    package: "SOIC14N"
+    quantity: 1
+    remark: "Read the Rämixx500 documentation before populating!"
+    components: ["U94"]
+    mouser: {"id": "595-SN74HCT14DR"}
+  - part: "MMBFJ113"
+    package: "SOT23"
+    quantity: 2
+    remark: "Instead of Q321, Q331"
+    components: ["Q921", "Q931"]
+    mouser: {"id": "512-MMBFJ113"}
+  - id: 900850-01
+    part: "1N4148"
+    package: "TH"
+    quantity: 1
+    remark: "Instead of R913, use with coin battery!"
+    components: ["D913"]
+    mouser: {"id": "512-1N4148"}
+  - id: 902707-01
+    part: "2N3906 - PNP"
+    package: "TO-92"
+    quantity: 1
+    remark: "Harddisk LED extension"
+    components: ["Q99"]
+    mouser: {"id": "637-2N3906"}
+  - id: 901550-20
+    part: "10kΩ - 1/4W 5%"
+    package: "TH"
+    quantity: 1
+    remark: "Harddisk LED extension"
+    components: ["R98"]
+    mouser: {"id": "603-MF0207FTE52-10K"}
+  - id: 901550-22
+    part: "47kΩ - 1/4W 5%"
+    package: "TH"
+    quantity: 1
+    remark: "Harddisk LED extension"
+    components: ["R99"]
+    mouser: {"id": "603-MF0207FTE52-47K"}
+  - id: 390082-02
+    part: "100nF - MLC Z5U"
+    package: "Axial"
+    quantity: 2
+    remark: "C99: Only install for 318069 Agnus"
+    components: ["C94", "C99"]
+    mouser: {"id": "80-C412C104K5R-TR"}
+  - part: "CM4545Z131B-10"
+    package: "TH"
+    quantity: 1
+    remark: "LF1 replacement"
+    components: ["LF99"]
+    mouser: {"id": "875-CM4545Z131B-10"}
+  - part: "Coin Battery Holder CR2032"
+    package: "TH"
+    quantity: 1
+    remark: ""
+    components: ["BT9"]
+    mouser: {"id": "122-2420-GR"}
+  - part: "DIL Header, 6 pin, straight"
+    quantity: 4
+    remark: "Read the Rämixx500 documentation before populating!"
+    components: ["J90", "J91", "J92", "J93"]
+    mouser: {id: "649-67997-206HLF"}
+  - part: "SIL Header, 1 pin, straight"
+    quantity: 1
+    remark: "HDACT connector"
+    components: ["J99"]
+    mouser: {id: "649-68001-100HLF"}
+  - part: "Shorting Bars"
+    quantity: 5
+    remark: "Jumpers"
+    mouser: {id: "200-SNT100BKG"}
+
