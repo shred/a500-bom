@@ -1,11 +1,5 @@
 # Table of Contents
 
-<div style="background-color:red;padding:10px;text-align:center">
-<div style="font-size:200%;font-weight:bold">WARNING</div>
-<p style="font-weight:bold">This Bill of Materials is work in progress, and has not been reviewed yet!</p>
-<p>We recommend to check every component on this list before ordering!</p>
-</div>
-
 <div class="toc"><ul>
   <li><a href="index.html">Introduction</a> &ndash; this page</li>
   <li><a href="a500-bom.html">The Bill of Material</a> &ndash; what you are probably here for</li>
