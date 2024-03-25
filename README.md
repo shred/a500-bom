@@ -30,6 +30,7 @@ The following sources have been used:
 * Amiga 500 Rev 8A Schematics
 * SukkoPera: [Rämixx500](https://github.com/SukkoPera/Raemixx500)
 * [Amiga PCB Explorer](https://www.amigapcb.org/)
+* [Part list](https://github.com/SukkoPera/Raemixx500/issues/22) by BrandonQuest
 
 ## Disclaimer
 
