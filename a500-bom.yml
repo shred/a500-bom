@@ -14,28 +14,32 @@ license:
 
 Board:
   - id: 312812-01
-    part: "PCB Assembly (PAL)"
+    part: "PCB Assembly"
     quantity: 1
     remark: "Rämixx500 by SukkoPera"
+    flavor: PAL
   - id: 312812-02
-    part: "PCB Assembly (NTSC)"
+    part: "PCB Assembly"
     quantity: 1
     remark: "Rämixx500 by SukkoPera"
+    flavor: NTSC
 
 "Custom Chips":
   - id: 390544-01
-    part: "MOS 8375 Agnus 2MB (PAL)"
+    part: "MOS 8375 Agnus 2MB"
     package: "PLCC84"
     quantity: 1
     components: ["U2"]
     remark: "Do not use other types!"
+    flavor: PAL
     rare: true
   - id: 390544-02
-    part: "MOS 8375 Agnus 2MB (NTSC)"
+    part: "MOS 8375 Agnus 2MB"
     package: "PLCC84"
     quantity: 1
     components: ["U2"]
     remark: "Do not use other types!"
+    flavor: NTSC
     rare: true
   - id: 252127-02
     part: "MOS 8364R7 Paula"
@@ -599,18 +603,20 @@ Filters:
 
 Oscillators:
   - id: 252344-01
-    part: "28.37516 MHz Oscillator, metal (PAL)"
+    part: "28.37516 MHz Oscillator, metal"
     package: "DIP14"
     quantity: 1
     components: ["X1"]
     remark: ""
+    flavor: PAL
     rare: true
   - id: 325566-14
-    part: "28.63636 MHz Oscillator, metal (NTSC)"
+    part: "28.63636 MHz Oscillator, metal"
     package: "DIP14"
     quantity: 1
     components: ["X1"]
     remark: ""
+    flavor: NTSC
     rare: true
   - id: 900560-01
     part: "32.768 kHz Crystal"

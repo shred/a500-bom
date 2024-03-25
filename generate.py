@@ -73,8 +73,16 @@ def xlsxExport(data):
                 worksheet.write(row, 0, item['id'])
             worksheet.write(row, 1, item['quantity'])
             worksheet.write(row, 2, item['part'])
+            rem = ''
+            if 'rare' in item and item['rare']:
+                rem += '[RARE] '
+            if 'flavor' in item:
+                rem += '['
+                rem += item['flavor']
+                rem += '] '
             if 'remark' in item:
-                worksheet.write(row, 3, item['remark'])
+                rem += item['remark']
+            worksheet.write(row, 3, rem)
             if 'package' in item:
                 worksheet.write(row, 4, item['package'])
             if 'mouser' in item:

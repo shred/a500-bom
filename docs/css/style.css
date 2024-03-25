@@ -149,6 +149,20 @@ td.section {
 .rare {
     background-color: #ed1c24;
     color: white;
+    cursor: default;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    margin: auto .2rem auto 0;
+    padding: 0 1rem;
+}
+
+.flavor {
+    background-color: #0abcff;
+    color: black;
+    cursor: default;
     font-size: small;
     font-weight: bold;
     text-align: center;

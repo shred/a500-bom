@@ -30,6 +30,9 @@
         {%- if p.rare -%}
             <span class="rare">Rare</span>
         {%- endif -%}
+        {%- if p.flavor -%}
+            <span class="flavor" title="{{ p.flavor|e }} only">{{ p.flavor|e }}</span>
+        {%- endif -%}
         {{ p.remark|e }}</td>
     <td class="c-pkg">{{ p.package|e }}</td>
     <td class="c-cmp">{{ p.components|join(', ')|e }}</td>
