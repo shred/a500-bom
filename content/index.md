@@ -63,7 +63,7 @@ On an original Amiga 500 board, only the CPU, the ROM, and the custom chips are 
 
 We generally recommend to use turned pin sockets. However, if you plan to use expansions (such as accelerators or HDMI converters) or PLCC to DIP adapters, standard sockets might be a better choice, as the pin headers might not fit into turned pin sockets.
 
-Ultra low profile sockets are required for the DRAM chips (U16~U23). Otherwise the chips will collide with the keyboard.
+The DRAM chips (U16~U23) require ultra low profile sockets. Otherwise the chips will collide with the keyboard.
 
 ## Rämixx500
 

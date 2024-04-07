@@ -797,8 +797,7 @@ Various:
     quantity: 8
     components: ["U10", "U11", "U12", "U13", "U34", "U35", "U40", "U41"]
     mouser: {"id": "575-11044320"}
-  - id: 390768-04
-    part: "Socket, DIP20, Ultra Low Profile"
+  - part: "Socket, DIP20, Ultra Low Profile"
     package: "DIP20"
     quantity: 8
     components: ["U16", "U17", "U18", "U19", "U20", "U21", "U22", "U23"]
