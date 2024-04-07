@@ -63,6 +63,8 @@ On an original Amiga 500 board, only the CPU, the ROM, and the custom chips are 
 
 We generally recommend to use turned pin sockets. However, if you plan to use expansions (such as accelerators or HDMI converters) or PLCC to DIP adapters, standard sockets might be a better choice, as the pin headers might not fit into turned pin sockets.
 
+Ultra low profile sockets are required for the DRAM chips (U16~U23). Otherwise the chips will collide with the keyboard.
+
 ## Rämixx500
 
 The _Rämixx500_ board has some modifications compared to the original Commodore board. At the bottom of the parts list, you will find all additional parts that are needed for building a Rämixx500.

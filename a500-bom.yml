@@ -2,8 +2,8 @@
 ---
 project: "Amiga 500 Rev 8A"
 base: "https://shred.github.io/a500-bom/"
-version: "0.3"
-date: "2024-03-25"
+version: "0.4"
+date: "2024-04-07"
 source:
   repo: "GitHub"
   url: "https://github.com/shred/a500-bom"
@@ -794,9 +794,15 @@ Various:
   - id: 390768-04
     part: "Socket, DIP20"
     package: "DIP20"
-    quantity: 16
-    components: ["U10", "U11", "U12", "U13", "U16", "U17", "U18", "U19", "U20", "U21", "U22", "U23", "U34", "U35", "U40", "U41"]
+    quantity: 8
+    components: ["U10", "U11", "U12", "U13", "U34", "U35", "U40", "U41"]
     mouser: {"id": "575-11044320"}
+  - id: 390768-04
+    part: "Socket, DIP20, Ultra Low Profile"
+    package: "DIP20"
+    quantity: 8
+    components: ["U16", "U17", "U18", "U19", "U20", "U21", "U22", "U23"]
+    mouser: {"id": " 575-115433203"}
   - id: 902410-08
     part: "4.7kΩ Bussed Resistor Network, 9 Elements"
     package: "SIP10"
