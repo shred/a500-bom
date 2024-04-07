@@ -59,7 +59,7 @@ This Bill of Material includes a NiCd battery as buffer for the RTC. These batte
 
 This list contains sockets for all chips in DIP and PLCC packages for your convenience. It is of course up to you if you want to use all of them.
 
-On an original Amiga 500 board, only the CPU, the ROM, and the custom chips are socketed. The other sockets are optional.
+On an original Amiga 500 board, only the CPU, the ROM, and the custom chips are socketed. The PLCC socket is required (you cannot solder Agnus directly to the board), but the other sockets are optional.
 
 We generally recommend to use turned pin sockets. However, if you plan to use expansions (such as accelerators or HDMI converters) or PLCC to DIP adapters, standard sockets might be a better choice, as the pin headers might not fit into turned pin sockets.
 
