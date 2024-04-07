@@ -47,7 +47,7 @@ A few more hints:
 * **Video Hybrid**: There is a [replica board](https://github.com/SukkoPera/OpenAmigaVideoHybrid), but it requires SMD soldering.
 * **RTC**: You can replace the OKI MSM6242B with an RTC72421A. If you do so, do not populate Y9, C911, and TC9 (this one is difficult to find anyway). The RTC72421A does not need to be calibrated.
 * **Power Connector**: The 5-pin square DIN connector is a "Power Dynamics DS-215". It is long out of production, but maybe knowing the type will help you find it.
-* **D-Sub DB-23 Connectors**: It may be surprising because the other D-Sub connectors are still available, but the DB-23 ones are really rare. Unfortunately you will need at least one of them for the video connector.
+* **D-Sub DB-23 Connectors**: It may be surprising because the other D-Sub connectors are still available, but the DB-23 ones are really rare. Unfortunately one of them is the video output. You can skip them if you don't intend to use external floppy drives and use a RGB-to-HDMI converter.
 
 ## Battery
 
