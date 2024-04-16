@@ -49,14 +49,17 @@
 <li><strong>Video Hybrid</strong>: There is a <a href="https://github.com/SukkoPera/OpenAmigaVideoHybrid">replica board</a>, but it requires SMD soldering.</li>
 <li><strong>RTC</strong>: You can replace the OKI MSM6242B with an RTC72421A. If you do so, do not populate Y9, C911, and TC9 (this one is difficult to find anyway). The RTC72421A does not need to be calibrated.</li>
 <li><strong>Power Connector</strong>: The 5-pin square DIN connector is a &ldquo;Power Dynamics DS-215&rdquo;. It is long out of production, but maybe knowing the type will help you find it.</li>
-<li><strong>D-Sub DB-23 Connectors</strong>: It may be surprising because the other D-Sub connectors are still available, but the DB-23 ones are really rare. Unfortunately you will need at least one of them for the video connector.</li>
+<li><strong>D-Sub DB-23 Connectors</strong>: It may be surprising because the other D-Sub connectors are still available, but the DB-23 ones are really rare. Unfortunately one of them is the video output. You can skip them if you don&rsquo;t intend to use external floppy drives and use a RGB-to-HDMI converter.</li>
 </ul>
+<h2>Capacitors</h2>
+<p>For the electrolytic capacitors, you should prefer to use polymer hybrid aluminum types with a higher voltage rating and a maximum temperature of at least 85°C, to extend their lifetime. Generally, you should get the best quality that money can buy, to avoid leaking in a couple of decades.</p>
+<p>C324 and C334 can be bipolar capacitors to enhance audio quality.</p>
 <h2>Battery</h2>
 <p>This Bill of Material includes a NiCd battery as buffer for the RTC. These batteries tend to leak over the years, and certainly killed a lot of classic Amiga 500s. It is advisable to use a different type of energy source, like a button cell.</p>
 <p><strong>Caution:</strong> Do not use a non-rechargeable battery without the necessary hardware modifications!</p>
 <h2>Sockets</h2>
 <p>This list contains sockets for all chips in DIP and PLCC packages for your convenience. It is of course up to you if you want to use all of them.</p>
-<p>On an original Amiga 500 board, only the CPU, the ROM, and the custom chips are socketed. The other sockets are optional.</p>
+<p>On an original Amiga 500 board, only the CPU, the ROM, and the custom chips are socketed. The PLCC socket is required (you cannot solder Agnus directly to the board), but the other sockets are optional.</p>
 <p>We generally recommend to use turned pin sockets. However, if you plan to use expansions (such as accelerators or HDMI converters) or PLCC to DIP adapters, standard sockets might be a better choice, as the pin headers might not fit into turned pin sockets.</p>
 <p>The DRAM chips (U16~U23) require ultra low profile sockets. Otherwise the chips will collide with the keyboard.</p>
 <h2>Rämixx500</h2>
@@ -84,7 +87,7 @@
 <p>This project is distributed under the terms of <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#content">GNU General Public License (GPLv3)</a>.</p>
 </article>
     <footer>
-      <strong>Amiga 500 Rev 8A Bill of Material</strong>, Version: 0.4 (2024-04-07)<br />
+      <strong>Amiga 500 Rev 8A Bill of Material</strong>, Version: 0.5 (2024-04-16)<br />
       Source at <a class="printable" href="https://github.com/shred/a500-bom">GitHub</a> &ndash;
       License: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#content">GNU General Public License (GPLv3)</a><br />
       <strong>This content is provided "as is" and without warranties of any kind either expressed or implied.</strong>

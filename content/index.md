@@ -49,6 +49,12 @@ A few more hints:
 * **Power Connector**: The 5-pin square DIN connector is a "Power Dynamics DS-215". It is long out of production, but maybe knowing the type will help you find it.
 * **D-Sub DB-23 Connectors**: It may be surprising because the other D-Sub connectors are still available, but the DB-23 ones are really rare. Unfortunately one of them is the video output. You can skip them if you don't intend to use external floppy drives and use a RGB-to-HDMI converter.
 
+## Capacitors
+
+For the electrolytic capacitors, you should prefer to use polymer hybrid aluminum types with a higher voltage rating and a maximum temperature of at least 85°C, to extend their lifetime. Generally, you should get the best quality that money can buy, to avoid leaking in a couple of decades.
+
+C324 and C334 can be bipolar capacitors to enhance audio quality.
+
 ## Battery
 
 This Bill of Material includes a NiCd battery as buffer for the RTC. These batteries tend to leak over the years, and certainly killed a lot of classic Amiga 500s. It is advisable to use a different type of energy source, like a button cell.

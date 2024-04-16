@@ -2,8 +2,8 @@
 ---
 project: "Amiga 500 Rev 8A"
 base: "https://shred.github.io/a500-bom/"
-version: "0.4"
-date: "2024-04-07"
+version: "0.5"
+date: "2024-04-16"
 source:
   repo: "GitHub"
   url: "https://github.com/shred/a500-bom"
@@ -322,7 +322,7 @@ Capacitors:
     package: "TH 5mm"
     quantity: 4
     components: ["C303", "C304", "C324", "C334"]
-    remark: ""
+    remark: "C324 and C334 can be bipolar"
     mouser: {"id": "667-EEU-FR1H220B"}
   - id: 251894-50
     part: "47µF 35V - Aluminum Electrolytic"
@@ -695,7 +695,7 @@ Connectors:
     package: "DIL34"
     quantity: 1
     components: ["CN11"]
-    remark: "Internal Floppy"
+    remark: "Internal Floppy (remove pin 3), Rämixx500 see below"
     mouser: {"id": "649-67997-234HLF"}
   - id: 325516-04
     part: "4 Pin SIL Header"
@@ -709,7 +709,7 @@ Connectors:
     package: "SIL8"
     quantity: 1
     components: ["CN13"]
-    remark: "Keyboard"
+    remark: "Keyboard (remove pin 5)"
     mouser: {"id": "649-68001-208HLF"}
   - id: 390224-01
     part: "56 Pin DIL Header, Right Angle"
@@ -896,6 +896,13 @@ Various:
     quantity: 5
     remark: "Jumpers"
     mouser: {id: "200-SNT100BKG"}
+  - id: 903345-17
+    part: "34 Pin DIL Header, shrouded"
+    package: "DIL34"
+    quantity: 1
+    components: ["CN11"]
+    remark: "No need to remove pin 3"
+    mouser: {"id": "538-70246-3404"}
   - part: "6 Pin Round DIN"
     package: ""
     quantity: 1
