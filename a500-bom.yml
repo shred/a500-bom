@@ -2,8 +2,8 @@
 ---
 project: "Amiga 500 Rev 8A"
 base: "https://shred.github.io/a500-bom/"
-version: "0.5"
-date: "2024-04-16"
+version: "0.6"
+date: "2024-04-28"
 source:
   repo: "GitHub"
   url: "https://github.com/shred/a500-bom"
@@ -185,7 +185,7 @@ Board:
     remark: ""
     rare: true
     mouser: {"id": "595-MC1489N"}
-  - id: 390227-06
+  - id: 380227-06
     part: "74HCT245, Octal Tri-State Bus Transceiver"
     package: "DIP20"
     quantity: 2
