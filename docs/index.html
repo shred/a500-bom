@@ -34,7 +34,7 @@
 <li><strong>Amiga 500 keyboard</strong> with your desired keyboard layout. There are replica keycaps in different colors for Mitsumi keyboards, and there are also replica keyboards.</li>
 <li><strong>Amiga mouse</strong> or replica.</li>
 <li><strong>Amiga 500 floppy disk drive</strong> plus the respective wires, or a <a href="https://github.com/keirf/flashfloppy">FlashFloppy</a> compatible floppy drive emulator.</li>
-<li><strong>Power supply</strong>, a modern replica is recommended.</li>
+<li><strong>Power supply</strong>, a modern replica is recommended. If you opt for an original PSU, please have it inspected by a trained technician before use.</li>
 <li>An <strong>Amiga 500 metal shield set</strong> (with insulation sheet) is recommended, but not strictly required.</li>
 </ul>
 <h2>Rare Components</h2>
@@ -45,11 +45,12 @@
 <li><strong>Agnus 8375</strong>: This part is very rare and expensive, but <strong>do not use other Agnus types</strong>, they have a different pinout and will get damaged! There is an <a href="https://github.com/LIV2/Diet-Agnus-A500-plus">adapter</a> for the more common Agnus 8372, but your system is then limited to 1MB of Chip RAM of course.</li>
 <li><strong>Custom Chips</strong>: If you can only get a PLCC chip, use a PLCC to DIP adapter board.</li>
 <li><strong>RAM</strong>: You can use any 44256 type DRAM with a 256Kx4 organization and an access time of 120ns or faster.</li>
-<li><strong>ROM</strong>: Either use an original one, or burn a 27C400 yourself (provided you have a license). New licensed ROMs are available from Cloanto or Hyperion Entertainment.</li>
+<li><strong>ROM</strong>: Either use an original one, or burn a 27C400 yourself (provided you have a license). New licensed ROMs are available from Cloanto or Hyperion Entertainment (image files only).</li>
 <li><strong>Video Hybrid</strong>: There is a <a href="https://github.com/SukkoPera/OpenAmigaVideoHybrid">replica board</a>, but it requires SMD soldering.</li>
 <li><strong>RTC</strong>: You can replace the OKI MSM6242B with an RTC72421A. If you do so, do not populate Y9, C911, and TC9 (this one is difficult to find anyway). The RTC72421A does not need to be calibrated.</li>
 <li><strong>Power Connector</strong>: The 5-pin square DIN connector is a &ldquo;Power Dynamics DS-215&rdquo;. It is long out of production, but maybe knowing the type will help you find it.</li>
 <li><strong>D-Sub DB-23 Connectors</strong>: It may be surprising because the other D-Sub connectors are still available, but the DB-23 ones are really rare. Unfortunately one of them is the video output. You can skip them if you don&rsquo;t intend to use external floppy drives and use a RGB-to-HDMI converter.</li>
+<li><strong>MC1488/MC1489</strong>: You can skip them if you don&rsquo;t need the serial port.</li>
 </ul>
 <h2>Capacitors</h2>
 <p>For the electrolytic capacitors, you should prefer to use polymer hybrid aluminum types with a higher voltage rating and a maximum temperature of at least 85°C, to extend their lifetime. Generally, you should get the best quality that money can buy, to avoid leaking in a couple of decades.</p>
@@ -74,12 +75,13 @@
 <li><strong>Floppy Switcher</strong>: Before populating J90, cut the two marked traces and check that they are actually cut.</li>
 <li><strong>Kickstart Switcher</strong>: Before populating J91, J92 and J93, cut the marked traces between each of the middle pins and check that they are actually cut.</li>
 </ul>
-<p>Again: <strong>Read the Rämixx500 documentation carefully!</strong> There are a few things that need your attention. If you just blindly solder in all the components, you will damage your hardware.</p>
+<p>Again: <strong>Read the Rämixx500 documentation carefully!</strong> There are a few things that need your attention. If you just blindly solder in all the components, <strong>you will damage your hardware</strong>.</p>
 <h2>Disclaimer</h2>
 <p>This is not an official list! It was collected and reviewed by Amiga enthusiasts.</p>
 <p>Although we strive to make the information in this project as helpful and accurate as possible, it is provided &ldquo;as is&rdquo; and without warranties of any kind either expressed or implied.</p>
 <p>In other words: You might spend a lot of money, and end up with a non-functioning mainboard or a cardboard box full of useless components.</p>
 <p><strong>Use at your own risk!</strong></p>
+<p>This project requires electronics experience and soldering skills. Failure to do so may result in personal injury or property damage.</p>
 <h2>Contribute</h2>
 <p>This list is meant to be a community work. Our goal is to have a canonical list that people can rely on when ordering parts for building an own Amiga 500 mainboard.</p>
 <p>However, this list may not be free of errors. If you have found one, please <a href="https://github.com/shred/a500-bom/issues">open an issue</a>, send a patch, or <a href="https://www.a1k.org/forum/index.php?members/6632/">send me a message</a> at the A1K.org forum.</p>
@@ -87,7 +89,7 @@
 <p>This project is distributed under the terms of <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#content">GNU General Public License (GPLv3)</a>.</p>
 </article>
     <footer>
-      <strong>Amiga 500 Rev 8A Bill of Material</strong>, Version: 0.6 (2024-04-28)<br />
+      <strong>Amiga 500 Rev 8A Bill of Material</strong>, Version: 0.7 (2024-06-05)<br />
       Source at <a class="printable" href="https://github.com/shred/a500-bom">GitHub</a> &ndash;
       License: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#content">GNU General Public License (GPLv3)</a><br />
       <strong>This content is provided "as is" and without warranties of any kind either expressed or implied.</strong>

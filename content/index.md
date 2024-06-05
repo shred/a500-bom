@@ -30,7 +30,7 @@ This bill of material only comprises of the components required for the mainboar
 * **Amiga 500 keyboard** with your desired keyboard layout. There are replica keycaps in different colors for Mitsumi keyboards, and there are also replica keyboards.
 * **Amiga mouse** or replica.
 * **Amiga 500 floppy disk drive** plus the respective wires, or a [FlashFloppy](https://github.com/keirf/flashfloppy) compatible floppy drive emulator.
-* **Power supply**, a modern replica is recommended.
+* **Power supply**, a modern replica is recommended. If you opt for an original PSU, please have it inspected by a trained technician before use.
 * An **Amiga 500 metal shield set** (with insulation sheet) is recommended, but not strictly required.
 
 ## Rare Components
@@ -43,11 +43,12 @@ A few more hints:
 * **Agnus 8375**: This part is very rare and expensive, but **do not use other Agnus types**, they have a different pinout and will get damaged! There is an [adapter](https://github.com/LIV2/Diet-Agnus-A500-plus) for the more common Agnus 8372, but your system is then limited to 1MB of Chip RAM of course.
 * **Custom Chips**: If you can only get a PLCC chip, use a PLCC to DIP adapter board.
 * **RAM**: You can use any 44256 type DRAM with a 256Kx4 organization and an access time of 120ns or faster.
-* **ROM**: Either use an original one, or burn a 27C400 yourself (provided you have a license). New licensed ROMs are available from Cloanto or Hyperion Entertainment.
+* **ROM**: Either use an original one, or burn a 27C400 yourself (provided you have a license). New licensed ROMs are available from Cloanto or Hyperion Entertainment (image files only).
 * **Video Hybrid**: There is a [replica board](https://github.com/SukkoPera/OpenAmigaVideoHybrid), but it requires SMD soldering.
 * **RTC**: You can replace the OKI MSM6242B with an RTC72421A. If you do so, do not populate Y9, C911, and TC9 (this one is difficult to find anyway). The RTC72421A does not need to be calibrated.
 * **Power Connector**: The 5-pin square DIN connector is a "Power Dynamics DS-215". It is long out of production, but maybe knowing the type will help you find it.
 * **D-Sub DB-23 Connectors**: It may be surprising because the other D-Sub connectors are still available, but the DB-23 ones are really rare. Unfortunately one of them is the video output. You can skip them if you don't intend to use external floppy drives and use a RGB-to-HDMI converter.
+* **MC1488/MC1489**: You can skip them if you don't need the serial port.
 
 ## Capacitors
 
@@ -84,7 +85,7 @@ The _Rämixx500_ board has some modifications compared to the original Commodore
 * **Floppy Switcher**: Before populating J90, cut the two marked traces and check that they are actually cut.
 * **Kickstart Switcher**: Before populating J91, J92 and J93, cut the marked traces between each of the middle pins and check that they are actually cut.
 
-Again: **Read the Rämixx500 documentation carefully!** There are a few things that need your attention. If you just blindly solder in all the components, you will damage your hardware.
+Again: **Read the Rämixx500 documentation carefully!** There are a few things that need your attention. If you just blindly solder in all the components, **you will damage your hardware**.
 
 ## Disclaimer
 
@@ -95,6 +96,8 @@ Although we strive to make the information in this project as helpful and accura
 In other words: You might spend a lot of money, and end up with a non-functioning mainboard or a cardboard box full of useless components.
 
 **Use at your own risk!**
+
+This project requires electronics experience and soldering skills. Failure to do so may result in personal injury or property damage.
 
 ## Contribute
 

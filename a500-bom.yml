@@ -2,8 +2,8 @@
 ---
 project: "Amiga 500 Rev 8A"
 base: "https://shred.github.io/a500-bom/"
-version: "0.6"
-date: "2024-04-28"
+version: "0.7"
+date: "2024-06-05"
 source:
   repo: "GitHub"
   url: "https://github.com/shred/a500-bom"
@@ -17,11 +17,13 @@ Board:
     part: "PCB Assembly"
     quantity: 1
     remark: "Rämixx500 by SukkoPera"
+    rare: true
     flavor: PAL
   - id: 312812-02
     part: "PCB Assembly"
     quantity: 1
     remark: "Rämixx500 by SukkoPera"
+    rare: true
     flavor: NTSC
 
 "Custom Chips":
@@ -83,6 +85,7 @@ Board:
     package: "DIP40"
     quantity: 1
     components: ["U6"]
+    rare: true
     remark: "Replace with AM27C400, MX27C4100 or similar"
   - id: 318073-01
     part: "OKI MSM6242B RTC"
@@ -207,6 +210,7 @@ Transistors:
     quantity: 2
     components: ["Q321", "Q331"]
     remark: "or PN4302. Rämixx500 SMD alternative: see below"
+    rare: true
     mouser: {"id": "863-MPF102"}
   - id: 902658-01
     part: "2N3904 - NPN"
@@ -344,7 +348,7 @@ Capacitors:
     quantity: 3
     components: ["C307", "C401", "C402"]
     remark: "height < 24mm"
-    mouser: {"id": " 667-EEU-FR1C102LB"}
+    mouser: {"id": "667-EEU-FR1C102LB"}
   - id: 251029-06
     part: "Varicap 6.8pF – 45pF"
     package: "TH 5mm"
@@ -712,12 +716,11 @@ Connectors:
     remark: "Keyboard (remove pin 5)"
     mouser: {"id": "649-68001-208HLF"}
   - id: 390224-01
-    part: "56 Pin DIL Header, Right Angle"
+    part: "56 Pin DIL Header, right angle, mating length 6.9mm"
     package: "RA-56H"
     quantity: 1
     components: ["P9"]
-    remark: "Expansion"
-    mouser: {"id": "200-TSW12825LDRA"}
+    remark: "Expansion (e.g. W+P 947-15-056-00)"
 
 Various:
   - id: 380393-01
@@ -801,7 +804,7 @@ Various:
     package: "DIP20"
     quantity: 8
     components: ["U16", "U17", "U18", "U19", "U20", "U21", "U22", "U23"]
-    mouser: {"id": " 575-115433203"}
+    mouser: {"id": "575-115433203"}
   - id: 902410-08
     part: "4.7kΩ Bussed Resistor Network, 9 Elements"
     package: "SIP10"
