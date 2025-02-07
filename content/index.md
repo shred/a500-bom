@@ -2,28 +2,28 @@
 
 <div class="toc"><ul>
   <li><a href="index.html">Introduction</a> &ndash; this page</li>
-  <li><a href="a500-bom.html">The Bill of Material</a> &ndash; what you are probably here for</li>
+  <li><a href="a500-bom.html">The Bill of Materials</a> &ndash; what you are probably here for</li>
   <li><a href="csv.html">CSV Export</a> &ndash; for Mouser Electronics</li>
   <li><a href="a500-bom.xlsx">Excel File Download</a> &ndash; for your spreadsheet application</li>
-  <li><a href="https://github.com/shred/a500-bom">GitHub Project Page</a> &ndash; feel free to contribute</li>
-  <li><a href="other.html">Other Bill of Materials</a> &ndash; if you liked this one</li>
+  <li><a href="https://codeberg.org/shred/a500-bom">Codeberg Project Page</a> &ndash; feel free to contribute</li>
+  <li><a href="other.html">Other Bills of Materials</a> &ndash; if you liked this one</li>
 </ul></div>
 
 # Introduction
 
-This is the Bill of Material for a replica Amiga 500+ Rev 8A. It is optimized for the [Rämixx500](https://github.com/SukkoPera/Raemixx500) Version 2 by SukkoPera.
+This is the Bill of Materials for a replica Amiga 500+ Rev 8A. It is optimized for the [Rämixx500](https://github.com/SukkoPera/Raemixx500) Version 2 by SukkoPera.
 
 ## Read Me First!
 
 If you want to build your own Amiga, be aware that the machine was designed in the late 1980s.
 
-While almost all of the standard components are still available, some components are very rare by now. You will need _all_ of the listed components (except of those marked optional). We recommend that you try to get the components marked as <span class="rare">Rare</span> first, so you won't waste your money on standard components if you fail to get all the rare ones.
+While almost all the standard components are still available, some components are very rare by now. You will need _all_ the listed components (except of those marked optional). We recommend that you try to get the components marked as <span class="rare">Rare</span> first, so you won't waste your money on standard components if you fail to get all the rare ones.
 
 The original Amiga board does not require SMD soldering. The Rämixx500, and some of the replica replacements of rare parts, require SMD soldering and are not recommended for soldering novices.
 
 **If you build a Rämixx500, make sure to read the corresponding section below. Also read the Rämixx500 documentation carefully!**
 
-This bill of material only comprises of the components required for the mainboard itself. For a complete Amiga 500 you need:
+This bill of materials includes only the components required for the mainboard itself. For a complete Amiga 500 you need:
 
 * This **Amiga 500 mainboard**, assembled and tested.
 * **Amiga 500 computer case**, original or replica.
@@ -47,7 +47,7 @@ A few more hints:
 * **Video Hybrid**: There is a [replica board](https://github.com/SukkoPera/OpenAmigaVideoHybrid), but it requires SMD soldering.
 * **RTC**: You can replace the OKI MSM6242B with an RTC72421A. If you do so, do not populate Y9, C911, and TC9 (this one is difficult to find anyway). The RTC72421A does not need to be calibrated.
 * **Power Connector**: The 5-pin square DIN connector is a "Power Dynamics DS-215". It is long out of production, but maybe knowing the type will help you find it.
-* **D-Sub DB-23 Connectors**: It may be surprising because the other D-Sub connectors are still available, but the DB-23 ones are really rare. Unfortunately one of them is the video output. You can skip them if you don't intend to use external floppy drives and use a RGB-to-HDMI converter.
+* **D-Sub DB-23 Connectors**: It may be surprising because the other D-Sub connectors are still available, but the DB-23 ones are really rare. Unfortunately one of them is the video output. You can skip them if you don't intend to use external floppy drives and use an RGB-to-HDMI converter.
 * **MC1488/MC1489**: You can skip them if you don't need the serial port.
 
 ## Capacitors
@@ -70,7 +70,7 @@ On an original Amiga 500 board, only the CPU, the ROM, and the custom chips are 
 
 We generally recommend to use turned pin sockets. However, if you plan to use expansions (such as accelerators or HDMI converters) or PLCC to DIP adapters, standard sockets might be a better choice, as the pin headers might not fit into turned pin sockets.
 
-The DRAM chips (U16~U23) require ultra low profile sockets. Otherwise the chips will collide with the keyboard.
+The DRAM chips (U16~U23) require ultra low profile sockets. Otherwise, the chips will collide with the keyboard.
 
 ## Rämixx500
 
@@ -80,7 +80,7 @@ The _Rämixx500_ board has some modifications compared to the original Commodore
 * **Line Filter**: The Rämixx500 board provides an alternative footprint for a line filter that is still available.
 * **Coin Battery**: Instead of the accumulator, the Rämixx500 provides a holder for a coin battery. Instead of R913, a diode must be placed in D913.
 * **MPF102**: Instead of Q321 and Q331 in a TO-92 package, you can use MMBFJ113 in SOT23 package (Q921, Q931). Only populate one type, not both!
-* **Power Connector**: The Rämixx500 board also accepts standard round DIN-6 or DIN-8 connectors. However this requires a modification to your power supply cable.
+* **Power Connector**: The Rämixx500 board also accepts standard round DIN-6 or DIN-8 connectors. However, this requires a modification to your power supply cable.
 * **Sync Signal Buffer**: If you populate U94 and C94, cut the JP99H and JP99V jumpers and check that they are actually cut.
 * **Floppy Switcher**: Before populating J90, cut the two marked traces and check that they are actually cut.
 * **Kickstart Switcher**: Before populating J91, J92 and J93, cut the marked traces between each of the middle pins and check that they are actually cut.
@@ -103,7 +103,7 @@ This project requires electronics experience and soldering skills. Failure to do
 
 This list is meant to be a community work. Our goal is to have a canonical list that people can rely on when ordering parts for building an own Amiga 500 mainboard.
 
-However, this list may not be free of errors. If you have found one, please [open an issue](https://github.com/shred/a500-bom/issues), send a patch, or [send me a message](https://www.a1k.org/forum/index.php?members/6632/) at the A1K.org forum.
+However, this list may not be free of errors. If you have found one, please [open an issue](https://codeberg.org/shred/a500-bom/issues), send a patch, or [send me a message](https://www.a1k.org/forum/index.php?members/6632/) at the A1K.org forum.
 
 ## License
 
