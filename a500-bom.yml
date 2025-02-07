@@ -2,8 +2,8 @@
 ---
 project: "Amiga 500 Rev 8A"
 base: "https://shred.codeberg.page/a500-bom/"
-version: "0.7"
-date: "2024-06-05"
+version: "0.8"
+date: "2025-02-07"
 source:
   repo: "Codeberg"
   url: "https://codeberg.org/shred/a500-bom"
