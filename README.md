@@ -38,6 +38,12 @@ This is not an official list! It was collected and reviewed by Amiga enthusiasts
 
 Although we strive to make the information in this project as helpful and accurate as possible, it is provided "as is" and without warranties of any kind either expressed or implied. **Use it at your own risk!**
 
+## Building
+
+After cloning, initialize the submodule: `git submodule init; git submodule update`.
+
+Invoke `generate.py` to generate the page content. You will find the generated pages in the `pages` directory.
+
 ## Kudos
 
 I would like to thank these people from the [www.A1K.org Amiga Board](https://www.a1k.org) for their help: psydown.
